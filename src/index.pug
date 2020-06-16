@@ -13,6 +13,25 @@ html(lang="en")
     body
         .container
 
+            .todo-cont
+
+                .add-task
+                    input(placeholder="Add Task")
+                    img(src="./assets/icons/plus.svg")
+
+                .tasks-state
+                    .tasks-count Tasks: 
+                        span 0 
+                    .completed-tasks Completed: 
+                        span 0
+
+                .tasks-content
+                    .no-task There's no tasks yet
+                    .task-box Task One 
+                        img.done-task(src="./assets/icons/check.svg" style="right:-70px")
+                        img.remove-task(src="./assets/icons/remove.svg")
+                        audio#done-task(src="./assets/music/click-4.mp3" preload="auto")
+                        audio#remove-task(src="./assets/music/click-2.mp3" preload="auto")
 
 
 
